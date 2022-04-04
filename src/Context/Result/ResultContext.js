@@ -5,7 +5,7 @@ const ResultContext = createContext();
 const initialState = {
   result: [],
   isLoading: false,
-  searchTerm: '',
+  searchTerm: 'google',
 };
 
 export const ResultProvider = ({ children }) => {

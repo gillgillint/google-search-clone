@@ -6,6 +6,11 @@ const resultReducer = (state, action) => {
         result: action.payload,
         isLoading: false,
       };
+    case 'SET_SEARCH_TERM':
+      return {
+        ...state,
+        searchTerm: action.payload,
+      };
 
     case 'SET_LOADING':
       return {
